@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Message Received</title>
+</head>
+
+<body>
+    <h1>Message Received</h1>
+    <h3>Thank you for adding the following message:</h3>
+    <ul>
+        <%newMessage.forEach(message =>{%>
+        <li><%=message.title%>: <%=message.body%></li>
+        <%})%>
+    </ul>
+</body>
+
+</html>
