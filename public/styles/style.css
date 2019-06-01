@@ -1,0 +1,123 @@
+*,
+body {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    background-image: url(../image/cv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Permanent Marker', Cursive;
+    font-size: 55px;
+    color: #FC766AFF;
+}
+
+p {
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 20px;
+    color: #184A45FF;
+}
+
+.navbar a {
+    color: #184A45FF;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 20px;
+
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.box1 {
+    width: 50vh;
+    height: 5vh;
+    background-color: transparent;
+    border: 1px solid #FC766AFF;
+    border-radius: 0.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 15px;
+    word-break: break-word;
+}
+
+.box2 {
+    width: 50vh;
+    height: 15vh;
+    background-color: transparent;
+    border: 1px solid #FC766AFF;
+    border-radius: 0.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 15px;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid #FC766AFF;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 10vh;
+    height: 5vh;
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 15px;
+    color: #FC766AFF;
+
+}
+
+.display {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    word-break: break-word;
+}
+
+.title {
+    flex-flow: column wrap;
+    width: 30%;
+    height: 15vh;
+    margin-top: 10px;
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 20px;
+    color: #FC766AFF;
+    border-bottom: #184A45FF 2px solid;
+    border-right: #184A45FF 2px solid;
+    text-transform: uppercase;
+}
+
+.body {
+    flex-flow: column wrap;
+    width: 70%;
+    height: 15vh;
+    margin-top: 10px;
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 20px;
+    color: #FC766AFF;
+    border-bottom: #184A45FF 2px solid;
+}

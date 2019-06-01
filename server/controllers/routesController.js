@@ -32,6 +32,7 @@ module.exports = {
                 return client.query('insert into messages (title, body) values ($1, $2)', [req.body.title, req.body.body])
                     .then(results => {
                         client.release();
+                        res.redirect('/results');
                         console.log(`Added new message to database ${results.rowCount}`)
                     })
                     .catch(error => {
@@ -42,7 +43,7 @@ module.exports = {
             .catch(error => {
                 console.error(`Could not connect to database ${error.stack}`)
             })
-        res.redirect('/results');
+
     }
 
 }

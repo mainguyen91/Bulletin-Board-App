@@ -5,18 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bulletin Board</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Welcome to Bulletin Board!</h1>
-    <h3>Please add a new message</h3>
-    <form method='POST' action='/addMessage'>
-        <input type="text" placeholder="title of your message" name='title'>
-        <input type="text" placeholder='your message' name='body'>
-        <input type="submit" value='SEND'>
+    <div class="navbar">
+        <a class="active" href="/">Home</a>
+        <a href="/results">Rekwests</a>
+    </div>
 
-    </form>
+    <div>
+        <div class="center">
+            <h1>Welcome to Rekwest Friyay!</h1>
+            <p>Rekwest a song as a gift to thyself or to others and listen to it every Friday at 7PM
+                on Mai's Radio FM 99.9 Mhz</p>
+            <form class="form" method="POST" action="/results">
+                <input class="box1" type="text" placeholder="song title" name="title" autocomplete="off" required>
+                <input class="box2" type="text" placeholder="your message" name="body" autocomplete="off" required>
+                <input class="button" type="submit" value="SEND">
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

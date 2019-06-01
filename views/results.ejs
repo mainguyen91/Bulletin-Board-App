@@ -5,17 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Message Received</title>
+    <title>Request Received</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Message Received</h1>
-    <h3>Thank you for adding the following message:</h3>
-    <ul>
+    <div class="navbar">
+        <a class="active" href="/">Home</a>
+        <a href="/results">Rekwests</a>
+    </div>
+
+    <div class="center">
+        <h1>Rekwest Received</h1>
+        <p>Thank you for the following rekwest(s):</p>
+    </div>
+
+    <div class="display">
+        <%newMessage.reverse().forEach(message => {%>
+        <div class="title">
+            <%=message.title%>
+        </div>
+        <div class="body">
+            <%=message.body%>
+        </div>
+        <%})%>
+    </div>
+    <!-- <ul>
         <%newMessage.forEach(message =>{%>
         <li><%=message.title%>: <%=message.body%></li>
         <%})%>
-    </ul>
+    </ul> -->
 </body>
 
 </html>
