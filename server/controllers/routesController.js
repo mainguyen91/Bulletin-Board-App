@@ -43,7 +43,5 @@ module.exports = {
             .catch(error => {
                 console.error(`Could not connect to database ${error.stack}`)
             })
-
     }
-
 }

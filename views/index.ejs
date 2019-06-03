@@ -22,10 +22,10 @@
             <p>Rekwest a song as a gift to thyself or to others and listen to it every Friday at 7PM
                 on Mai's Radio FM 99.9 Mhz</p>
             <form class="form" method="POST" action="/results">
-                <textarea class="box1" type="text" placeholder="song title" name="title" autocomplete="off"
-                    required></textarea>
-                <textarea class="box2" type="text" placeholder="your message" name="body" autocomplete="off"
-                    required></textarea>
+                <textarea class="box1" type="text" placeholder="song title (max. 255 characters)" name="title"
+                    autocomplete="off" required maxlength="255" style="resize: none"></textarea>
+                <textarea class="box2" type="text" placeholder="your message (max. 255 characters)" name="body"
+                    autocomplete="off" required maxlength="255" style="resize: none"></textarea>
                 <input class="button" type="submit" value="SEND">
             </form>
         </div>
