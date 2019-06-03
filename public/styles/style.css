@@ -101,7 +101,6 @@ p {
 .title {
     flex-flow: column wrap;
     width: 30%;
-    height: 15vh;
     margin-top: 10px;
     font-family: 'Overpass', Sans-Serif;
     font-size: 20px;
@@ -114,7 +113,6 @@ p {
 .body {
     flex-flow: column wrap;
     width: 70%;
-    height: 15vh;
     margin-top: 10px;
     font-family: 'Overpass', Sans-Serif;
     font-size: 20px;
